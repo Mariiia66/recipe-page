@@ -473,6 +473,7 @@ padding: 10px 20px 10px 40px;
     text-transform: uppercase;
 }
 
+
 .in_the_kitchen{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -677,7 +678,7 @@ padding: 10px 20px 10px 40px;
     color: var(--color-ligh);
     padding: 65px 0 30px;
     font-family: 'Roboto', sans-serif;
-     width: 90%;
+     width: 100%;
      max-width: 1200px;
     margin: 0 auto;
 }
@@ -827,10 +828,14 @@ padding: 10px 20px 10px 40px;
 /* INSTRUCTIONS */
 
 .instructions {
-    margin-top: 35px;
-    width: var(--width-12col);
-    margin: 105px;
+    width: auto;
+    margin: 105px 80px;
 
+}
+
+.instructions .in_the_kitchen{
+    margin: 0 0 40px 0;
+    width: 100%;
 }
 
 .instructions h2 {
