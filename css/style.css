@@ -498,8 +498,8 @@ padding: 10px 20px 10px 40px;
 
 /* Rectangles with text */
 .text-card {
-    background-color: #eaeaea;
-    color: #333333;
+    background-color: var(--color-ligh);
+    color: var(--color-dark);
 
     display: flex;
     align-items: center;
@@ -525,13 +525,13 @@ padding: 10px 20px 10px 40px;
     display: inline-block;
     width: 2px;
     height: 12px;
-    background-color: #b96230;
+    background-color: var(--primary-color);
     margin-right: 9px;
 }
 
 /* Orange heading */
 .text-card h2 {
-    color: #b96230;
+    color: var(--primary-color);
     font-size: 20px;
     margin: 0 0 12px;
 }
@@ -549,15 +549,15 @@ padding: 10px 20px 10px 40px;
     min-width: 155px;
     padding: 10px 25px;
 
-    background-color: #333333;
-    color: white;
+    background-color: var(--color-dark);
+    color: var(--color-white);
     text-align: center;
     text-decoration: none;
     border-radius: 4px;
 }
 
 .card-button:hover {
-    background-color: #b96230;
+    background-color:var(--primary-color);
 }
 
 /* Rectangles containing photos */
@@ -577,8 +577,8 @@ padding: 10px 20px 10px 40px;
 
 /* FOOTER BACKGROUND */
 .site-footer {
-    background-color: #b96837;
-    color: #493326;
+    background-color: var(--primary-color);
+    color: var(--color-dark);
 
     width: 100%;
     min-height: 80px;
@@ -632,7 +632,7 @@ padding: 10px 20px 10px 40px;
 .footer-divider {
     width: 1px;
     height: 60px;
-    background-color: #e6b18f;
+    background-color: var(--color-ligh);
 }
 
 /* RIGHT SIDE */
@@ -648,6 +648,7 @@ padding: 10px 20px 10px 40px;
     margin: 0;
     overflow-wrap: anywhere;
     text-align: right;
+    color: var(--color-ligh);
 }
 
 .footer-copyright {
@@ -664,8 +665,611 @@ padding: 10px 20px 10px 40px;
 
 .footer-social a:hover,
 .footer-menu a:hover {
-    color: #ffffff;
+    color: var(--color-ligh);
 }
+
+
+
+/* GENERAL RECIPE SECTION */
+
+.recipe-page {
+    background-color:var(--background-color-dark-bg);
+    color: var(--color-ligh);
+    padding: 65px 0 30px;
+    font-family: 'Roboto', sans-serif;
+     width: 90%;
+     max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* TOP SECTION */
+
+.recipe-top {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+    align-items: start;
+    color: var(--color-ligh);
+    padding-top: 110px;
+}
+
+
+/* RECIPE INFORMATION */
+
+.recipe-info {
+    padding-right: 10px;
+    margin: 80px;
+}
+
+.recipe-category {
+    color: var(--primary-color);
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.recipe-info h1 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    color: var(--color-ligh);
+}
+
+.recipe-info h1 strong {
+    font-weight: 700;
+    color: var(--color-ligh);
+}
+
+
+/* RECIPE DETAILS */
+
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+    max-width: 480px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail span {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.detail p {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* INGREDIENTS */
+
+.recipe-info h3 {
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: var(--color-ligh);
+}
+
+.ingredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;              
+    color: var(--color-ligh);
+}
+
+.ingredients ul {
+    padding-left: 14px;     
+}
+
+.ingredients li {
+    font-size: 13px;        
+    line-height: 1.7;
+}
+
+.last{
+    margin-bottom: 20px;
+}
+
+
+/* RECIPE IMAGE */
+
+.recipe-image{
+    height: 400px;
+    width: var(--width-full);
+    display: flex;
+    justify-content: right;
+    background-image: url(https://picsum.photos/400/400);
+    background-size: right;
+    background-position: right;
+    clip-path: circle(50% at 50% 50%);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* BUTTONS */
+
+.recipe-buttons {
+    display: flex;
+    gap: var(--grid-gap);
+    
+}
+
+.recipe-buttons button {
+    background: transparent;
+    color: var(--background-color-light);
+    border: 1px solid var(--color-ligh);
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin:0 5px 0 0;
+    justify-content: center;
+    height: 30px;
+
+}
+
+.recipe-buttons button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* INSTRUCTIONS */
+
+.instructions {
+    margin-top: 35px;
+    width: var(--width-12col);
+    margin: 105px;
+
+}
+
+.instructions h2 {
+    font-size: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-ligh);
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-ligh);
+}
+
+.instructions ol {
+    padding-left: 18px;
+}
+
+.instructions li {
+    font-size: 12px;
+    line-height: 1.9;
+    padding-left: 4px;
+    margin-bottom: 26px;
+    color: var(--color-ligh);
+}
+
+
+
+
+/* -- BONUS SECTION -- */
+.bonus {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 80px;
+    color: var(--color-ligh);
+}
+
+.bonus h2 {
+    font-size: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 12px;                      
+    margin-bottom: 40px;                       
+    border-bottom: 1px solid var(--color-ligh); 
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 22px;
+    margin-bottom: 36px;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.step-label {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.bonus-ingredients ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.bonus-ingredients li {
+    margin-bottom: 6px;
+}
+
+
+
+
+/* -- CHICKEN RECIPE PAGE-- */
+
+/* GENERAL BACKGROUND */
+
+body {
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/* MAIN PAGE */
+
+.page-container {
+    width: 90%;
+    max-width: var(--width-12col);
+    margin: 0 auto;
+    padding: 150px 0 60px;
+    color: var(--color-ligh);
+}
+
+
+/* BREADCRUMB */
+
+.chicken-category {
+    color: #8a8a8a;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+/* TOP SECTION */
+
+.chicken-top {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    gap: 45px;
+    align-items: stretch;
+}
+
+
+/* MAIN IMAGE */
+
+.chicken-main-image {
+    width: 100%;
+    min-height: 520px;
+    overflow: hidden;
+}
+
+.chicken-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*  RECIPE INFORMATION */
+
+.chicken-info {
+    padding: 10px 0 0 10px;
+}
+
+
+.chicken-info h1 {
+    color: var(--primary-color);
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 18px;
+}
+
+
+.chicken-description {
+    color: var(--color-ligh);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 330px;
+    margin-bottom: 30px;
+}
+
+
+/* RECIPE DETAILS*/
+
+.chicken-details {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    padding: 18px 0;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 30px;
+}
+
+
+.chicken-details div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.chicken-details span {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+
+.chicken-details p {
+    color: var(--color-ligh);
+    font-size: 11px;
+    margin: 0;
+}
+
+
+/* INGREDIENTS*/
+
+.chicken-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+.chicken-ingredients ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+
+.chicken-ingredients li {
+    color: var(--color-ligh);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* INSTRUCTIONS */
+
+.chicken-instructions {
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+.chicken-instructions h2 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #555555;
+}
+
+
+.chicken-instructions ol {
+    padding-left: 18px;
+    max-width: 62%;
+}
+
+
+.chicken-instructions li {
+    color: var(--color-ligh);
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    padding-left: 3px;
+}
+
+
+.chicken-instructions li strong {
+    display: block;
+    color: var(--color-ligh);
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+
+/*  CHEF'S ADVICE */
+
+.chicken-advice {
+    width: 52%;
+    min-height: 230px;
+    margin: 60px 0 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-color-light);
+    color: var(--color-dark);
+}
+
+
+.chicken-advice-text {
+    padding: 30px 25px;
+}
+
+
+.chicken-advice-text h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 0 0 18px;
+}
+
+
+.chicken-advice-text p {
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+.chicken-advice-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.chicken-advice-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* BOTTOM IMAGE */
+
+.chicken-bottom-image {
+    width: 55%;
+    height: 520px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+
+.chicken-bottom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+
+/* FOOTER BACKGROUND */
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--color-dark);
+
+    width: 100%;
+    min-height: 80px;
+
+    display: grid;
+
+    /* Four sections */
+    grid-template-columns: 1fr 1fr 1px 2fr;
+
+    align-items: center;
+
+    padding: 15px 6%;
+    gap: 20px;
+}
+
+/* SOCIAL MEDIA */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.footer-social i {
+    font-size: 11px;
+}
+
+/* MENU */
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-menu a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* VERTICAL LINE */
+.footer-divider {
+    width: 1px;
+    height: 60px;
+    background-color: var(--color-ligh);
+}
+
+/* RIGHT SIDE */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.footer-url {
+    font-size: 8px;
+    margin: 0;
+    overflow-wrap: anywhere;
+    text-align: right;
+    color: var(--color-ligh);
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 8px;
+    text-align: left;
+}
+
+.footer-copyright i {
+    font-size: 12px;
+}
+
+.footer-social a:hover,
+.footer-menu a:hover {
+    color: var(--color-ligh);
+}
+
+
+
+
+
+
+
 
 
 
@@ -700,7 +1304,7 @@ padding: 10px 20px 10px 40px;
         --width-12col: 100%;
     }
 
-    body{}
+    
 
 .menu-container{
     display:none;
@@ -788,8 +1392,73 @@ padding: 10px 20px 10px 40px;
 
 
 
+      .page-container {
+        padding: 120px 0 40px;
+    }
+
+    .chicken-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .chicken-main-image {
+        min-height: 320px;
+    }
+
+    .chicken-info {
+        padding: 0;
+    }
+
+    .chicken-info h1 {
+        font-size: 32px;
+    }
+
+    .chicken-description {
+        max-width: 100%;
+    }
+
+    .chicken-details {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .chicken-instructions {
+        margin-top: 50px;
+    }
+
+    .chicken-instructions h2 {
+        font-size: 26px;
+    }
+
+    .chicken-instructions ol {
+        max-width: 100%;
+    }
+
+    .chicken-advice {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .chicken-advice-image {
+        height: 220px;
+    }
+
+    .chicken-bottom-image {
+        width: 100%;
+        height: 320px;
+    }
+
+
+
 
 
 
 
 }
+
+
+
+
+
+
+
